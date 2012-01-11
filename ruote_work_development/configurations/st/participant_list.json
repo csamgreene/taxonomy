@@ -1,1 +1,1 @@
-{"list":[],"_rev":1,"put_at":"2012-01-11 18:20:17.348326 UTC","_id":"participant_list","type":"configurations"}
+{"list":[["^write_document$",["WriteDocument",{}]],["^publish_document$",["PublishDocument",{}]],["^.+$",["Ruote::StorageParticipant",{}]]],"_rev":3,"put_at":"2012-01-11 18:25:39.772326 UTC","_id":"participant_list","type":"configurations"}

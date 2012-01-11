@@ -1,5 +1,5 @@
 
-require 'ruote/storage/fs_storage'
+require 'ruote/storage/hash_storage'
 
 
 #
@@ -7,7 +7,7 @@ require 'ruote/storage/fs_storage'
 
 RuoteKit.engine = Ruote::Engine.new(
   Ruote::Worker.new(
-    Ruote::FsStorage.new("ruote_work_#{Rails.env}")))
+    Ruote::HashStorage.new()))
 
 #
 # register participants
