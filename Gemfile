@@ -42,5 +42,3 @@ gem 'haml'
 
 gem 'ruote', :git => 'git://github.com/jmettraux/ruote.git'
 gem 'ruote-kit', :git => 'git://github.com/kennethkalmer/ruote-kit.git'
-
-
