@@ -1,0 +1,16 @@
+
+define 'taxonomy_management'
+  cursor
+
+    author
+
+    write_document
+
+    reviewer
+    rewind unless: '${approved}'
+
+    publisher
+    jump to: reviewer, if: '${issue}'
+
+    publish_document
+

@@ -1,3 +1,4 @@
+
 source 'http://rubygems.org'
 
 gem 'rails', '3.1.3'
@@ -29,5 +30,17 @@ gem 'jquery-rails'
 # gem 'capistrano'
 
 # To use debugger
-# gem 'ruby-debug'
+# gem 'ruby-debug19', :require => 'ruby-debug'
+
+group :test do
+  gem 'capybara', '1.1.2'
+  gem 'rspec', '2.7.0'
+  gem 'rspec-rails', '2.7.0'
+end
+
+gem 'haml'
+
+gem 'ruote', :git => 'git://github.com/jmettraux/ruote.git'
+gem 'ruote-kit', :git => 'git://github.com/kennethkalmer/ruote-kit.git'
+
 
