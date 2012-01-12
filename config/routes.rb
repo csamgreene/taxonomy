@@ -1,6 +1,6 @@
 Taxonomy::Application.routes.draw do
 
-  resources :taxes
+  resources :nodes
 
   match 'flows' => 'flows#index'
   match 'flows/:id' => 'flows#launch', :as => :launch_flow, :via => :post

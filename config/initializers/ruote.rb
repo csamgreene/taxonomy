@@ -1,5 +1,7 @@
 
 require 'ruote/storage/hash_storage'
+
+# File Storage does not work on Heroku
 #require 'ruote/storage/fs_storage'
 
 

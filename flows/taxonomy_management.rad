@@ -1,14 +1,9 @@
 
 define 'taxonomy_management'
-  cursor
+  sequence do
 
     author
 
-    reviewer
-    rewind unless: '${approved}'
-
-    publisher
-    jump to: reviewer, if: '${issue}'
-
-
+  end
+end
 
