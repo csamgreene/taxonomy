@@ -2,7 +2,7 @@
 define 'taxonomy_management'
   sequence do
 
-    author
+    author :task => 'review'
 
   end
 end
