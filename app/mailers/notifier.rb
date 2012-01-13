@@ -19,7 +19,8 @@ ActionMailer::Base.smtp_settings = {
   
   default :from => 'taxonomy@example.com'
      
-    def newTerm()
+    def newTerm(id)
+      @url = url_for :host => "localhost:3000", :controller => "nodes", :action => "show", :id => id
       mail(:to => 'chris.greene@luxresearchinc.com', :subject => 'New taxonomy term submitted for review')
     end
 end
