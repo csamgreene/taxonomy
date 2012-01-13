@@ -11,7 +11,7 @@ group :production do
 end
 
 gem 'sqlite3'
-
+gem 'tlsmail'
 gem 'json'
 
 # Gems used only for assets and not required

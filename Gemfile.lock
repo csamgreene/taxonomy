@@ -182,6 +182,7 @@ GEM
     thor (0.14.6)
     tilt (1.3.3)
     tins (0.3.7)
+    tlsmail (0.0.1)
     treetop (1.4.10)
       polyglot
       polyglot (>= 0.3.1)
@@ -209,4 +210,5 @@ DEPENDENCIES
   ruote-kit!
   sass-rails (~> 3.1.5)
   sqlite3
+  tlsmail
   uglifier (>= 1.0.3)

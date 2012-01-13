@@ -1,9 +1,6 @@
 
 define 'taxonomy_management'
-  sequence do
+ 
+    announce_term
 
-    author :task => 'review'
-
-  end
-end
 

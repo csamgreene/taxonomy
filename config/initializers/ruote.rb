@@ -20,8 +20,7 @@ RuoteKit.engine = Ruote::Engine.new(
 # register participants
 
 RuoteKit.engine.register do
-  write_document WriteDocument
-  publish_document PublishDocument
+  announce_term AnnounceTerm
   catchall
 end
 

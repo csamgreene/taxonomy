@@ -45,7 +45,9 @@ class NodesController < ApplicationController
     respond_to do |format|
       if @node.save
         
-        RuoteKit.engine.launch('flows\taxonomy_management.rad', {:id=>@node.id})
+        @name = 'taxonomy_management'
+        @path = Rails.root.join('flows', @name + '.rad').to_s
+        RuoteKit.engine.launch(@path, {:id=>@node.id})
         
         format.html { redirect_to @node, :notice => 'Node was successfully created.' }
         format.json { render :json => @node, :status => :created, :location => @node }
