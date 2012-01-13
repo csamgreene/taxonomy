@@ -20,7 +20,12 @@ ActionMailer::Base.smtp_settings = {
   default :from => 'taxonomy@example.com'
      
     def newTerm(id)
-      @url = url_for :host => "localhost:3000", :controller => "nodes", :action => "show", :id => id
+      if Rails.env = 'development'
+        host = "localhost:3000"
+      else
+        host = "taxonomy.heroku.com"
+      end
+      @url = url_for :host => host, :controller => "nodes", :action => "show", :id => id
       mail(:to => 'chris.greene@luxresearchinc.com', :subject => 'New taxonomy term submitted for review')
     end
 end
