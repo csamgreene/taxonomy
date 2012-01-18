@@ -10,6 +10,18 @@ group :production do
   gem 'pg'
 end
 
+group :development do
+  gem 'rspec-rails', '2.7.0'
+end
+
+group :test do
+  gem 'capybara', '1.1.2'
+  gem 'rspec', '2.7.0'
+  gem 'rspec-rails', '2.7.0'
+  gem 'webrat', '0.7.1'
+end
+
+
 gem 'sqlite3'
 gem 'tlsmail'
 gem 'json'
@@ -36,11 +48,7 @@ gem 'jquery-rails'
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
 
-group :test do
-  gem 'capybara', '1.1.2'
-  gem 'rspec', '2.7.0'
-  gem 'rspec-rails', '2.7.0'
-end
+
 
 gem 'haml'
 
